@@ -2,7 +2,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, Integer, String
 
-engine = create_engine('mysql+mysqlconnector://root:@localhost/test', echo=True)
+engine = create_engine('oracle://system:secret@localhost:1521/xe', echo=True)
 
 Base = declarative_base()
 
